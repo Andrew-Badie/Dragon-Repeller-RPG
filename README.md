@@ -1,69 +1,44 @@
 # Dragon Repeller RPG 🐉🛡️
 
-A fun, interactive browser-based role-playing game where you embark on an adventure to defeat dragons, gain experience, and collect treasures. Built using JavaScript, HTML, and CSS, this project demonstrates key programming concepts like game logic, object-oriented design, and interactive web development.
+A browser-based JavaScript role-playing game completed as a learning project based on freeCodeCamp's **Learn Basic JavaScript by Building a Role Playing Game** curriculum.
 
-Table of Contents
-Introduction
-Features
-Technologies Used
-Installation
-How to Play
-Code Structure
-Contributions
+The project practices core JavaScript concepts through a small RPG with combat, inventory management, progression, and multiple game states.
 
-## Introduction
+## What it includes
 
-Dragon Repeller RPG is a single-player RPG that tasks the player with fighting monsters and ultimately defeating a dragon. The game allows players to collect gold, purchase weapons, and manage their health while battling a variety of creatures. It was built as a learning project to improve JavaScript skills and practice implementing game mechanics in a web environment.
+- Turn-based combat with attack, dodge, and run actions
+- Multiple enemies, including a slime, fanged beast, and dragon
+- XP, health, and gold progression
+- Weapon purchasing, upgrading, selling, and breakage
+- Location-based game states for the town, store, cave, and combat
+- A hidden bonus number game
+- Dynamic DOM updates using JavaScript event handlers
 
-## Features
+## Technologies
 
-Turn-Based Combat: Players can attack, dodge, or run during monster encounters.
-Inventory System: Players can buy and equip weapons, and their inventory updates dynamically.
-Dynamic Enemy Encounters: Battle different monsters with varying levels of difficulty.
-Experience and Gold Collection: Gain experience points (XP) and collect gold after defeating enemies.
-Health and Weapon Management: Players can buy health and upgrade their weapons.
-Secret Easter Egg Game: Hidden game mechanic for additional fun.
-## Technologies Used
+- JavaScript
+- HTML
+- CSS
 
-JavaScript: Core game logic and interactivity
-HTML: Structure and layout of the game
-CSS: Basic styling and game UI elements
-## Installation
+## Run locally
 
-To run the game locally:
+Clone the repository:
 
-Clone the repository: ```bash git clone https://github.com/yourusername/dragon-repeller-rpg.git ```
+```bash
+git clone https://github.com/Andrew-Badie/Dragon-Repeller-RPG.git
+cd Dragon-Repeller-RPG
+```
 
-Open the index.html file in any web browser.
+Then open `index.html` in a web browser. No additional dependencies or build tools are required.
 
-No additional dependencies or installations are required.
+## Code structure
 
-## How to Play
+- `index.html` — game interface and stat displays
+- `styles.css` — page and game styling
+- `game.js` — game state, combat logic, inventory, locations, progression, and event handling
 
-Start in the town square, where you can visit the store or the cave or choose to fight the dragon.
-In the store, you can buy health or weapons to prepare for upcoming battles.
-In the cave, fight monsters like slimes and fanged beasts to gain gold and experience.
-Collect gold to buy more powerful weapons, and earn XP by defeating monsters.
-Face off against the dragon once you’re strong enough!
-Watch your health, as running out will result in defeat.
-## Code Structure
+The JavaScript uses arrays and objects to represent weapons, monsters, and locations, while functions manage state transitions and gameplay actions.
 
-HTML (index.html): Contains the structure of the game, including buttons, stats, and text fields.
-CSS (styles.css): Basic styling to make the game visually appealing.
-JavaScript (game.js): The main logic for handling:
-Combat Mechanics: Manage player and monster health, attacks, and XP.
-Inventory System: Allow players to buy, sell, and equip weapons.
-Locations and Events: Different locations (town square, store, cave) and their associated actions.
-Monster Encounters: Handle fighting slimes, fanged beasts, and the dragon.
-Easter Egg Game: Bonus hidden game that gives the player a chance to win gold.
-Key variables:
+## Project context
 
-xp, health, gold: Track the player's experience, health, and gold.
-inventory: Keeps track of the player's weapons.
-weapons and monsters: Arrays that store available weapons and enemy stats.
-locations: Defines the different game locations and actions available in each.
-
-## Contributions
-
-Contributions are welcome! If you have ideas for new features, feel free to submit a pull request or open an issue.
-
+This is a **guided learning project**, not an original game concept. I keep it public because it demonstrates hands-on practice with JavaScript fundamentals, DOM manipulation, arrays/objects, functions, conditional logic, and state management.
